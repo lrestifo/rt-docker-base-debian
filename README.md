@@ -24,7 +24,7 @@ To build this image, run
 
 ```bash
 $# cd <this dir>
-$# docker build --pull --rm --tag lrestifo/rt-base-debian:0.01 .
+$# docker build --pull --rm --tag lrestifo/rt-base-debian:latest .
 ```
 
 ### Typical usage
@@ -39,7 +39,7 @@ Once built, the image can be run interactively e.g. to install additional module
 You can run this image interactively from Visual Studio Code or from the command line with
 
 ```bash
-$# docker run --rm -it lrestifo/rt-app-base-debian:0.01 .
+$# docker run --rm -it lrestifo/rt-app-base-debian:latest
 ```
 
 A more useful way to use this image is to include as the `FROM` Dockerfile command of an RT application container.
@@ -47,4 +47,4 @@ A more useful way to use this image is to include as the `FROM` Dockerfile comma
 ### Credits
 
 Thanks to Christian Loos (GitHub:@cloos) for publishing RT docker examples.
-This image was heavily inspired by his work.
+This image was heavily inspired by his work - in other words, it was shamelessly cloned and tweaked to include MySQL support.
