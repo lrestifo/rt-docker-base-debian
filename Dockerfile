@@ -31,6 +31,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     libdate-extract-perl \
     libdate-manip-perl \
     libdatetime-format-natural-perl \
+    libdatetime-set-perl \
     libdbd-sqlite3-perl \
     libdbd-mysql-perl \
     libdbix-searchbuilder-perl \
