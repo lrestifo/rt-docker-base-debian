@@ -76,6 +76,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     libserver-starter-perl \
     libsymbol-global-name-perl \
     libterm-readkey-perl  \
+    libtext-csv-perl \
+    libtext-csv-xs-perl \
     libtext-password-pronounceable-perl \
     libtext-quoted-perl \
     libtext-template-perl \
