@@ -132,7 +132,10 @@ RUN cpanm \
   Mozilla::CA \
   Encode::Detect::Detector \
   HTML::Gumbo \
+  Date::Holidays \
+  Date::Holidays::DE \
   Date::Holidays::PL \
+  Parse::BooleanLogic \
   # RT extension development dependencies
   ExtUtils::MakeMaker \
   Module::Install::RTx \
