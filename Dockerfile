@@ -29,6 +29,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     libdata-page-pageset-perl \
     libdata-page-perl \
     libdate-extract-perl \
+    libdate-holidays-de-perl \
     libdate-manip-perl \
     libdatetime-format-natural-perl \
     libdatetime-set-perl \
@@ -74,6 +75,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
     librole-basic-perl \
     libscope-upper-perl \
     libserver-starter-perl \
+    libset-object-perl \
     libsymbol-global-name-perl \
     libterm-readkey-perl  \
     libtext-csv-perl \
@@ -130,6 +132,7 @@ RUN cpanm \
   Mozilla::CA \
   Encode::Detect::Detector \
   HTML::Gumbo \
+  Date::Holidays::PL \
   # RT extension development dependencies
   ExtUtils::MakeMaker \
   Module::Install::RTx \
