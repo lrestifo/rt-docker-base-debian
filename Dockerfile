@@ -125,9 +125,9 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
 
 # Fix Apache logging to stdout/stderr
 RUN sed -ri \
-		-e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' \
-		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' \
-		"/etc/apache2/conf/httpd.conf"
+    -e 's!^(\s*CustomLog)\s+\S+!\1 /proc/self/fd/1!g' \
+ 		-e 's!^(\s*ErrorLog)\s+\S+!\1 /proc/self/fd/2!g' \
+ 		"/etc/apache2/apache2.conf"
 
 RUN cpanm \
   # RT dependencies
